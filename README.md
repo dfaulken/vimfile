@@ -1,0 +1,4 @@
+vimfile
+=======
+
+My vimfile.
