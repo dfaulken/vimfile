@@ -3,6 +3,7 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
+" eliminate pressing Shift for commands
 nnoremap ; :
 nnoremap <leader>v <C-w>v<C-w>l
 nnoremap <leader>h <C-w>s<C-w>j
@@ -12,6 +13,7 @@ vmap <Tab> %
 inoremap jk <ESC>l
 nnoremap <leader>i gg=G''
 nnoremap <leader>de gg"_dG
+" use Y to yank to end of line
 nnoremap Y y$
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -25,6 +27,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+" for FactoryGirl test suites
+" honestly pretty specialized for our app
+nmap t :%s/, /,\r<cr>:%s/FactoryGirl./<cr>ggVG=
+
 cmap w!! w !sudo tee > /dev/null %
 set t_Co=256
 set background=dark
