@@ -29,7 +29,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 " for FactoryGirl test suites
 " honestly pretty specialized for our app
-nmap tt :%s/, /,\r<cr>:%s/FactoryGirl./<cr>ggVG=
+nmap T :%s/, /,\r<cr>ggVG=
+nmap Y :%s/FactoryGirl./<cr>
 
 cmap w!! w !sudo tee > /dev/null %
 set t_Co=256
