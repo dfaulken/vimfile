@@ -27,10 +27,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-" for FactoryGirl test suites
-" honestly pretty specialized for our app
-nmap T :%s/, /,\r<cr>ggVG=
-nmap Y :%s/FactoryGirl./<cr>
 
 cmap w!! w !sudo tee > /dev/null %
 set t_Co=256
@@ -60,8 +56,8 @@ set timeoutlen=100
 set backspace=indent,eol,start
 set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_show_hidden = 1
 set guifont=Inconsolata:h12:cANSI
-autocmd FileType tex set textwidth=80
 call vundle#begin()
 
 " let Vundle manage Vundle
@@ -85,7 +81,7 @@ Bundle 'jiangmiao/auto-pairs.git'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'duff/vim-scratch.git'
-colorscheme evening
+colorscheme default
 " vim-scripts repos
 Bundle 'bufexplorer.zip'
 Bundle 'HTML-AutoCloseTag'
