@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/dsfaulkenberry/Google Drive/CMPSCI 326/workshop-3-html-css-and-bootstrap-dfaulken'
+let g:netrw_dirhist_2='/Users/dsfaulkenberry/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http'
