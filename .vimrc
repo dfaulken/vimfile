@@ -81,7 +81,7 @@ Bundle 'jiangmiao/auto-pairs.git'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'duff/vim-scratch.git'
-colorscheme default
+colorscheme murphy
 " vim-scripts repos
 Bundle 'bufexplorer.zip'
 Bundle 'HTML-AutoCloseTag'
@@ -92,9 +92,6 @@ Bundle 'Rename2'
 syntax enable
 filetype plugin indent on     " required!
 filetype indent on
-" highlight any lines you've added to which are longer than 80 characters.
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#502929
-match OverLength /\%81v.\+/
 "
 " Brief help
 " :BundleList          - list configured bundles
