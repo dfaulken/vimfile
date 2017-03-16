@@ -58,6 +58,7 @@ set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_show_hidden = 1
 set guifont=Inconsolata:h12:cANSI
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
 call vundle#begin()
 
 " let Vundle manage Vundle
@@ -79,15 +80,21 @@ Bundle 'scrooloose/nerdcommenter.git'
 Bundle 'scrooloose/syntastic.git'
 Bundle 'jiangmiao/auto-pairs.git'
 Bundle 'kien/ctrlp.vim'
-Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'duff/vim-scratch.git'
-colorscheme murphy
+Bundle 'flazz/vim-colorschemes'
+Bundle 'vim-misc'
+Bundle 'vim-colorscheme-switcher'
 " vim-scripts repos
 Bundle 'bufexplorer.zip'
 Bundle 'HTML-AutoCloseTag'
 Bundle 'matchit.zip'
 Bundle 'ruby-matchit'
 Bundle 'Rename2'
+
+call vundle#end()
+
+" Pick a random colorscheme
+autocmd VimEnter * RandomColorScheme
 
 syntax enable
 filetype plugin indent on     " required!
