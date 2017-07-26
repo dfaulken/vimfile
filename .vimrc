@@ -54,11 +54,11 @@ set nowrap
 set cm=blowfish
 set timeoutlen=100
 set backspace=indent,eol,start
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_show_hidden = 1
 set guifont=Inconsolata:h12:cANSI
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,*.prawn} set ft=ruby
 call vundle#begin()
 
 " let Vundle manage Vundle
