@@ -57,8 +57,9 @@ set backspace=indent,eol,start
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_working_path_mode = 0
 set guifont=Inconsolata:h12:cANSI
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,*.prawn} set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,*.prawn,*.rake} set ft=ruby
 call vundle#begin()
 
 " let Vundle manage Vundle
